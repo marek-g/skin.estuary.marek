@@ -264,15 +264,15 @@
 				<left>0</left>
 				<top>120</top>
 				<right>0</right>
-				<height>500</height>
+				<height>250</height>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500">
+				<itemlayout width="155" height="250">
 					<control type="group">
-						<left>70</left>
+						<left>35</left>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
@@ -281,10 +281,10 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500">
+				<focusedlayout width="155" height="250">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>
+						<left>35</left>
 						<animation type="Focus">
 							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="240,120" />
 						</animation>

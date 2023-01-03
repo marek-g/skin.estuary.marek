@@ -42,17 +42,17 @@
 				<pagecontrol>60</pagecontrol>
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>vertical</orientation>
-				<itemlayout width="300" height="380">
+				<itemlayout width="150" height="190">
 					<control type="group">
-						<top>10</top>
+						<top>5</top>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultFavourites.png" />
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="300">
+				<focusedlayout width="150">
 					<control type="group">
-						<top>10</top>
+						<top>5</top>
 						<include content="InfoWallMusicLayout">
 							<param name="fallback_image" value="DefaultFavourites.png" />
 							<param name="focused" value="true" />

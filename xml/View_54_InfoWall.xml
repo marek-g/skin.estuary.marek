@@ -52,38 +52,38 @@
 		<definition>
 			<control type="image">
 				<top>0</top>
-				<width>316</width>
-				<height>386</height>
+				<width>158</width>
+				<height>193</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
+				<bordertexture border="10">overlays/shadow.png</bordertexture>
+				<bordersize>10</bordersize>
 			</control>
 			<control type="image">
-				<top>-4</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>394</height>
+				<top>-2</top>
+				<left>-2</left>
+				<width>162</width>
+				<height>197</height>
 				<texture colordiffuse="button_focus">colors/grey.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
+				<bordertexture border="10">overlays/shadow.png</bordertexture>
+				<bordersize>10</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>316</width>
-				<height>316</height>
+				<width>158</width>
+				<height>158</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>keep</aspectratio>
-				<bordersize>20</bordersize>
+				<bordersize>10</bordersize>
 			</control>
 			<control type="textbox">
-				<left>28</left>
-				<top>289</top>
-				<width>262</width>
-				<height>80</height>
-				<font>font12</font>
+				<left>14</left>
+				<top>144</top>
+				<width>131</width>
+				<height>40</height>
+				<font>font10</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$PARAM[single_label]</label>
@@ -92,9 +92,9 @@
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBType,album)</visible>
 				<control type="label">
-					<left>29</left>
-					<top>300</top>
-					<width>260</width>
+					<left>15</left>
+					<top>150</top>
+					<width>140</width>
 					<label>$PARAM[sub_label]</label>
 					<font>font10</font>
 					<shadowcolor>text_shadow</shadowcolor>
@@ -102,19 +102,19 @@
 					<align>center</align>
 				</control>
 				<control type="label">
-					<left>29</left>
-					<top>328</top>
-					<width>260</width>
+					<left>15</left>
+					<top>164</top>
+					<width>130</width>
 					<label>$PARAM[main_label]</label>
-					<font>font12</font>
+					<font>font10</font>
 					<shadowcolor>text_shadow</shadowcolor>
 					<scroll>$PARAM[focused]</scroll>
 					<align>center</align>
 				</control>
 			</control>
 			<control type="group">
-				<left>133</left>
-				<top>2</top>
+				<left>76</left>
+				<top>1</top>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 		</definition>
